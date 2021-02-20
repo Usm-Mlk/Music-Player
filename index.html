@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music Player</title>
+    <script src="https://kit.fontawesome.com/1c2c2462bf.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" 
+    rel="stylesheet">
+    <link rel="stylesheet" href="./bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/style.css" type="text/css">
+</head>
+
+<body>
+    <div class="container-fluid music-container">
+        <div class="row">
+            <div class="col-xl-4 col-lg-4 col-md-12 col-sm-12" style="position: relative;" >
+                <div style="width: 365px; position: absolute; top: 300px;">
+                    <h1 class="quote mb-4"><i class="fas fa-quote-left"></i></h1>
+                    <h1 class="music-quote">
+                        The World <br> <span class="bold-word">
+                            Needs
+                        </span> <br> More Funk!
+                    </h1>
+                </div>
+            </div>
+            <div class="col-xl-4 col-lg-4 col-md-12 col-sm-12">
+                <div class="music-content">
+                    <div id="bg-image">
+                        <div id="blackLayer"></div>
+                        <img class="img-fluid" src="./Images/ncs1.jpeg" alt="Image" id="bgImage">
+                    </div>
+                    <div id="menu">
+                        <img class="img-fluid" src="./Images/menu.png" alt="Menu">
+                        <img src="./Images/search.png" alt="Search">
+                    </div>
+                    <div id="volume-container">
+                        <img class="img-fluid" src="./Images/volume-low.png" alt="volume low" id="volumn-down">
+                        <input type="range" class="slider" id="volumeslider" min="0" max="100" value="100" step="1">
+                        <img class="img-fluid" src="./Images/volumn-high.png" alt="volume hide" id="volumn-up">
+                    </div>
+                    <div id="music-image">
+                        <div id="circle-image">
+                            <img class="img-fluid" src="./Images/ncs1.jpeg" alt="NCS" id="image">
+                        </div>
+                        <div id="music-title">
+                            <h5 id="playlist_status"></h5>
+                            <h6 id="playlist_artist"></h6>
+                        </div>
+                    </div>
+                    <div id="music-menu">
+                        <button id="random"><img src="./Images/random.png" alt="Random"></button>
+                        <button id="mutebtn"><img src="./Images/speaker.png" alt="Speaker"></button>
+                    </div>
+                    <div id="currentTime">
+                        <span id="curtimetext">00:00</span>
+                        <span id="durtimetext">00:00</span>
+                    </div>
+                    <input type="range" class="seekslider" id="seekslider" min="0" max="100" value="0" step="1">
+                    <div id="buttons">
+                        <button class="repeat" id="repeat">
+                            <img class="img-fluid" src="./Images/rep.png" alt="">
+                        </button>
+                        <div>
+                            <button class="pre" id="prevbtn">
+                                <img class="img-fluid" src="./Images/backward.png" alt="">
+                            </button>
+                            <button class="play" id="playpausebtn">
+                                <img class="img-fluid" src="./Images/play-red.png" alt="">
+                            </button>
+                            <button class="next" id="nextbtn">
+                                <img class="img-fluid" src="./Images/forward.png" alt="Forward">
+                            </button>
+                        </div>
+                        <span class="like">
+                            <i class="far fa-heart" aria-hidden="true"></i>
+                        </span>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12">
+                    <div class="imageGIF">
+                        <img class="img-fluid" src="https://media.giphy.com/media/RezWpJN8bYlUnRqscm/giphy.gif" alt="">
+                    </div>
+            </div>
+        </div>
+    </div>
+    <footer class="text-center">       
+        <div class="container new">
+            <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12">
+                <a href="" class="pogo" clas="text-center">EXPLORE MUSIC</a>
+            <p> <em>Life'z Fun</em> </p>
+            </div>
+            <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12">
+                <div class="social">
+                    <a href=""><i class="fa fa-facebook wow bounceInUp" data-wow-duration="1s" data-wow-delay="1s"></i></a>
+                    <a href=""><i class="fa fa-twitter wow bounceInDown" data-wow-duration="1.3s" data-wow-delay="1.3s"></i></a>
+                    <a href=""><i class="fa fa-instagram wow bounceInUp" data-wow-duration="1.6s" data-wow-delay="1.6s"></i></a>
+                    <a href=""><i class="fa fa-linkedin wow bounceInDown" data-wow-duration="1.8s" data-wow-delay="1.8s"></i></a>
+                    <a href=""><i class="fa fa-behance wow bounceInUp" data-wow-duration="1.9s" data-wow-delay="1.9s"></i></a>
+                    
+                </div>
+            </div>    
+            <p class="wow bounceInUp" data-wow-duration="2s" data-wow-delay="2s">
+                &copy; 2021 EXPLORE Music. All Rights Reserved
+            </p>
+            <p>Developed by <span class="text-light">Fahad & Usman</span> </p>
+        </div>
+    </footer>
+
+    <!-- jQuery CDN -->
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <!-- Custom JS -->
+    <script src="./js/main.js"></script>
+    <!-- BOOTSTRAP5 JS File -->
+    <script src="bootstrap/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
